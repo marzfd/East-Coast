@@ -6,7 +6,7 @@ Table of contents
 03. header
 04. banner
 05. offer
-06. packages
+06. services
 07. about oman
 08. about us
 09. consultation
@@ -290,9 +290,7 @@ header
 }
 
 .header-area {
-  border-bottom: 3px dotted #eee;
   box-shadow: none;
-  background-color: #fff;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -708,118 +706,14 @@ header
 banner
 ---------------------------------------------
 */
-
-.main-banner {
-  padding-top: 140px;
-  padding-bottom: 40px;
+section.main-banner {
+  padding: 100px 0 40px 0;
+  background-color: #fffdd080;
 }
 
 .main-banner img {
-  width: 100%;
-  height: 700px;
-}
-
-.main-banner .left-content .thumb img {
-  width: 100%;
-  overflow: hidden;
-}
-
-.main-banner .left-content .inner-content {
-  position: absolute;
-  left: 100px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.main-banner .left-content .inner-content h4 {
-  color: #fff;
-  margin-top: -10px;
-  font-size: 52px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.main-banner .left-content .inner-content span {
-  font-size: 16px;
-  color: #fff;
-  font-weight: 400;
-  font-style: italic;
-  display: block;
-  margin-bottom: 30px;
-}
-
-.main-banner .right-content .right-first-image {
-  margin-bottom: 28.5px;
-}
-
-.main-banner .right-content .right-first-image .thumb {
-  position: relative;
-  text-align: center;
-}
-
-.main-banner .right-content .right-first-image .thumb img {
-  width: 100%;
-  overflow: hidden;
-}
-
-.main-banner .right-content .right-first-image .thumb .inner-content {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
-  text-align: center;
-}
-
-.main-banner .right-content .right-first-image .thumb .inner-content h4 {
-  color: #fff;
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-
-.main-banner .right-content .right-first-image .thumb .inner-content span {
-  font-size: 16px;
-  color: #fff;
-  font-style: italic;
-}
-
-.main-banner .right-content .right-first-image .thumb .hover-content {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  left: 15px;
-  bottom: 15px;
-  text-align: center;
-  background-color: rgba(42, 42, 42, 0.97);
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.5s;
-}
-
-.main-banner .right-content .right-first-image .thumb:hover .hover-content {
-  opacity: 1;
-  visibility: visible;
-}
-
-.main-banner .right-content .right-first-image .thumb .hover-content .inner {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-}
-
-.main-banner .right-content .right-first-image .thumb .hover-content h4 {
-  color: #fff;
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-
-.main-banner .right-content .right-first-image .thumb .hover-content p {
-  color: #fff;
-  padding: 0px 20px;
-  margin-bottom: 20px;
+  max-height: 800px;
+  object-fit: cover;
 }
 
 /*
@@ -829,15 +723,14 @@ Offer
 */
 
 section.offer {
-  background-image: url(../images/00.jpg);
+  background-image: url(../images/offer-image.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
   height: 100vh;
-  padding: 0px;
-  margin: 100px 0px;
+  /* padding: 0px; */
 }
 
 #offer .container {
@@ -858,32 +751,32 @@ section.offer {
 
 /*
 ---------------------------------------------
-Packages
+Services
 ---------------------------------------------
 */
 
-section .package {
-  /* background-color: #191a2010; */
-  padding-top: 95px;
-  padding-bottom: 95px;
+section .service {
+  background-color: #120f61;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
-.package {
-  margin-top: 120px;
+.service {
+  padding: 100px;
 }
 
-.package .section-heading {
+.service .section-heading {
   text-align: center;
   margin-bottom: 80px;
 }
 
-.package .naccs {
+.service .naccs {
   position: relative;
   background-color: #2b2d42;
   border-radius: 7px;
 }
 
-.package .icon {
+.service .icon {
   display: inline-block;
   width: 66px;
   height: 66px;
@@ -895,20 +788,25 @@ section .package {
   margin-right: 15px;
 }
 
-.package .icon img {
+.service .icon img {
   max-width: 27px;
 }
+.service .icon.business img {
+  opacity: 0.4;
+  height: 19px;
+  width: 27px;
+}
 
-.package .naccs .menu div.first-thumb {
+.service .naccs .menu div.first-thumb {
   border-top-left-radius: 7px;
 }
 
-.package .naccs .menu div.last-thumb {
+.service .naccs .menu div.last-thumb {
   margin-bottom: 0px;
   border-bottom-left-radius: 7px;
 }
 
-.package .naccs .menu div {
+.service .naccs .menu div {
   color: #fff;
   font-size: 15px;
   background-color: #8d99af;
@@ -922,12 +820,12 @@ section .package {
   transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.package .naccs .menu div.active,
-.package .naccs .menu div.active .thumb {
+.service .naccs .menu div.active,
+.service .naccs .menu div.active .thumb {
   background-color: #2b2d42;
 }
 
-.package ul.nacc {
+.service ul.nacc {
   position: relative;
   min-height: 100%;
   list-style: none;
@@ -936,7 +834,7 @@ section .package {
   transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.package ul.nacc li {
+.service ul.nacc li {
   opacity: 0;
   transform: translateX(-50px);
   position: absolute;
@@ -944,7 +842,7 @@ section .package {
   transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.package ul.nacc li.active {
+.service ul.nacc li.active {
   transition-delay: 0.3s;
   position: relative;
   z-index: 2;
@@ -952,15 +850,15 @@ section .package {
   transform: translateX(0px);
 }
 
-.package ul.nacc li {
+.service ul.nacc li {
   width: 100%;
 }
 
-.package .nacc .thumb .left-text {
+.service .nacc .thumb .left-text {
   margin-left: 30px;
 }
 
-.package .nacc .thumb .left-text h4 {
+.service .nacc .thumb .left-text h4 {
   color: #fff;
   font-size: 20px;
   font-weight: 700;
@@ -968,22 +866,22 @@ section .package {
   margin-bottom: 30px;
 }
 
-.package .nacc .thumb .left-text p {
+.service .nacc .thumb .left-text p {
   color: #fff;
   margin-bottom: 30px;
 }
 
-.package .nacc .thumb .right-image {
+.service .nacc .thumb .right-image {
   padding: 60px;
   display: inline-flex;
 }
 
-.package .nacc .thumb img {
+.service .nacc .thumb img {
   border-radius: 7px;
   width: 100%;
 }
 
-.package .nacc .thumb .left-text .main-white-button a {
+.service .nacc .thumb .left-text .main-white-button a {
   width: 100%;
   text-align: center;
 }
@@ -994,13 +892,22 @@ About Oman
 ---------------------------------------------
 */
 
+section.oman {
+  background-color: #fffdd080;
+  padding: 80px 0;
+}
+
 #oman {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.oman .left-content .thumb img {
+#oman img {
   width: 100%;
+  height: 100%;
+}
+
+.oman .left-content .thumb img {
   overflow: hidden;
 }
 
@@ -1038,7 +945,6 @@ About Oman
 }
 
 .oman .right-content .right-first-image .thumb img {
-  width: 100%;
   overflow: hidden;
 }
 
@@ -1107,7 +1013,7 @@ About Oman
 About Us
 ---------------------------------------------
 */
-
+/* 
 #about {
   padding-top: 190px;
   padding-bottom: 90px;
@@ -1264,7 +1170,7 @@ About Us
   background-color: transparent;
   line-height: 48px;
   border: 1px solid #2a2a2a;
-}
+} */
 
 /*
 ---------------------------------------------
@@ -1272,12 +1178,8 @@ Free Consultation
 ---------------------------------------------
 */
 
-#consult {
-  margin-bottom: 40px;
-}
-
 section.consult {
-  background-image: url(../images/image-05.jpg);
+  background-image: url(../images/consult-image.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1357,13 +1259,14 @@ Contact
 ---------------------------------------------
 */
 
-section.venue {
-  /* background-color: #191a2010; */
-  padding-top: 30px;
-  padding-bottom: 30px;
+section.contact {
+  background-color: #fffdd080;
+  padding-top: 85px;
+  padding-bottom: 85px;
+  height: auto;
 }
 
-.venue-thumb {
+.contact-thumb {
   border-radius: 30px;
   position: relative;
   overflow: hidden;
@@ -1371,13 +1274,13 @@ section.venue {
   height: 270px;
 }
 
-.venue-info-title,
-.venue-info-body {
+.contact-info-title,
+.contact-info-body {
   padding: 35px;
 }
 
-.venue-info-title {
-  background: #2a2a2a;
+.contact-info-title {
+  background: #120f61;
   padding: 20px 40px;
 }
 
@@ -1394,9 +1297,8 @@ footer
 */
 
 footer {
-  margin-top: 60px;
   padding: 60px 0px 30px 0px;
-  background-color: #2a2a2a;
+  background: #120f61;
 }
 
 footer .logo {
@@ -1470,18 +1372,21 @@ responsive
   .main-banner .right-content .right-first-image .thumb .hover-content p {
     display: none;
   }
-  .package .icon {
+  .service .icon {
     margin-left: 50%;
     transform: translateX(-33px);
     text-align: center;
     display: inline-block;
   }
-  .package .naccs .menu .thumb {
+  .service .naccs .menu .thumb {
     color: transparent;
   }
 }
 
 @media (max-width: 992px) {
+  section {
+    height: auto;
+  }
   .main-banner .right-content .right-first-image .thumb .hover-content p {
     display: block;
   }
@@ -1508,19 +1413,36 @@ responsive
   #offer .right-content .types {
     margin-top: 30px;
   }
-  .package .nacc .thumb .left-text {
+  .service .nacc .thumb .left-text {
     margin: 30px;
   }
-  .package .nacc .thumb .right-image {
+  .service .nacc .thumb .right-image {
     padding: 0px;
     margin: 0px 30px 30px 30px;
     display: block;
   }
-  .package .naccs .menu div.first-thumb {
+  .service .naccs .menu div.first-thumb {
     border-top-right-radius: 7px;
   }
-  .package .naccs .menu div.last-thumb {
+  .service .naccs .menu div.last-thumb {
     border-bottom-left-radius: 0px;
+  }
+  .oman .left-content .inner-content {
+    position: absolute;
+    left: 280px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  section.oman {
+    padding: 30px;
+  }
+  .oman .left-content .thumb {
+    margin-bottom: 30px;
+  }
+  #oman .left-content .thumb h4,
+  #oman .right-first-image h4 {
+    font-size: 40px;
+    margin: 0px;
   }
   section.consult .left-image {
     display: none;
@@ -1532,20 +1454,6 @@ responsive
     text-align: center;
     margin-bottom: 30px;
   }
-  .about-us .right-content {
-    margin-left: 0px;
-    margin-top: 30px;
-  }
-  .our-team .team-item {
-    margin-bottom: 30px;
-  }
-  .our-services .service-item {
-    margin-bottom: 30px;
-  }
-  .contact-us #map {
-    margin-right: 0px;
-    margin-bottom: 30px;
-  }
 }
 
 @media (max-width: 767px) {
@@ -1555,14 +1463,68 @@ responsive
     transform: translate(-50%, -50%);
     text-align: center;
   }
-
-  #Package img {
-    width: 100%;
+  #offer .container {
+    padding: 20px;
+  }
+  section .service {
+    padding: 20px;
+  }
+  .service .naccs .menu div {
+    height: 90px;
+    line-height: 90px;
+  }
+  .service .icon {
+    width: 55px;
+    height: 55px;
+    line-height: 52px;
+  }
+  section.oman {
+    padding: 20px 10px 0 10px;
+  }
+  #oman {
+    padding: 0;
+  }
+  .oman .left-content .thumb {
+    margin-bottom: 30px;
+  }
+  .oman .left-content .inner-content {
+    position: absolute;
+    left: 115px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  #oman .left-content .thumb h4 {
+    font-size: 24px;
+    margin: 0px;
+  }
+  #oman .right-first-image h4 {
+    font-size: 24px;
+    margin: 0px;
+  }
+  .section.consult {
+    padding: 30px;
     height: auto;
   }
-
-  .contact form button {
-    width: 100%;
+  #consult .container {
+    padding: 0;
+  }
+  section.contact {
+    height: auto;
+    padding: 20px 0;
+  }
+  .contact-thumb {
+    height: 220px;
+    border-radius: 10px;
+  }
+  .contact-thumb .contact-info-body {
+    padding: 25px 20px;
+  }
+  .contact-thumb .contact-info-title {
+    padding: 12px 20px;
+  }
+  .google-map {
+    height: 220px;
+    border-radius: 10px;
   }
   footer {
     text-align: center;
