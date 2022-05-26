@@ -265,30 +265,6 @@ header
 ---------------------------------------------
 */
 
-.background-header {
-  border-bottom: none !important;
-  background-color: #fff;
-  height: 80px !important;
-  position: fixed !important;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15) !important;
-}
-
-.background-header .logo,
-.background-header .main-nav .nav li a {
-  color: #1e1e1e !important;
-}
-
-.background-header .main-nav .nav li:hover a {
-  color: #2a2a2a !important;
-}
-
-.background-header .nav li a.active {
-  color: #2a2a2a !important;
-}
-
 .header-area {
   box-shadow: none;
   position: absolute;
@@ -911,30 +887,6 @@ section.oman {
   overflow: hidden;
 }
 
-.oman .left-content .inner-content {
-  position: absolute;
-  left: 100px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.oman .left-content .inner-content h4 {
-  color: #fff;
-  margin-top: -10px;
-  font-size: 52px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.oman .left-content .inner-content span {
-  font-size: 16px;
-  color: #fff;
-  font-weight: 400;
-  font-style: italic;
-  display: block;
-  margin-bottom: 30px;
-}
-
 .oman .right-content .right-first-image {
   margin-bottom: 28.5px;
 }
@@ -960,7 +912,6 @@ section.oman {
   color: #fff;
   font-size: 24px;
   font-weight: 700;
-  margin-bottom: 15px;
 }
 
 .oman .right-content .right-first-image .thumb .inner-content span {
@@ -1368,6 +1319,23 @@ responsive
 ---------------------------------------------
 */
 
+@media (min-width: 1200px) {
+  .oman .left-content .inner-content {
+    position: absolute;
+    left: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .oman .left-content .inner-content h4 {
+    color: #fff;
+    margin-top: -10px;
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+}
+
 @media (max-width: 1200px) {
   .main-banner .right-content .right-first-image .thumb .hover-content p {
     display: none;
@@ -1380,6 +1348,11 @@ responsive
   }
   .service .naccs .menu .thumb {
     color: transparent;
+  }
+  .oman .left-content .inner-content h4 {
+    color: #fff;
+    font-size: 52px;
+    font-weight: 700;
   }
 }
 
@@ -1427,12 +1400,6 @@ responsive
   .service .naccs .menu div.last-thumb {
     border-bottom-left-radius: 0px;
   }
-  .oman .left-content .inner-content {
-    position: absolute;
-    left: 280px;
-    top: 50%;
-    transform: translateY(-50%);
-  }
   section.oman {
     padding: 30px;
   }
@@ -1442,7 +1409,6 @@ responsive
   #oman .left-content .thumb h4,
   #oman .right-first-image h4 {
     font-size: 40px;
-    margin: 0px;
   }
   section.consult .left-image {
     display: none;
@@ -1493,10 +1459,7 @@ responsive
     top: 50%;
     transform: translateY(-50%);
   }
-  #oman .left-content .thumb h4 {
-    font-size: 24px;
-    margin: 0px;
-  }
+  #oman .left-content .thumb h4,
   #oman .right-first-image h4 {
     font-size: 24px;
     margin: 0px;
