@@ -1,0 +1,16 @@
+/* **** Fonts ***** */
+@font-face {
+  font-family: Vazir;
+  src: url('../fonts/Vazir.eot');
+  src: url('../fonts/Vazir.woff') format('woff'),
+    url('../fonts/Vazir.ttf') format('truetype'),
+    url('../fonts/Vazir.woff2') format('woff2');
+  font-weight: normal;
+}
+/* **** Fonts ***** */
+
+body {
+  font-family: Vazir, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  color: #272829;
+}
