@@ -13,7 +13,6 @@ Table of contents
 10. contact us
 11. footer
 12. responsive
-
 --------------------------------------------- */
 /*
 ---------------------------------------------
@@ -887,6 +886,30 @@ section.oman {
   overflow: hidden;
 }
 
+.oman .left-content .inner-content {
+  position: absolute;
+  left: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.oman .left-content .inner-content h4 {
+  color: #fff;
+  margin-top: -10px;
+  font-size: 52px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.oman .left-content .inner-content span {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+  font-style: italic;
+  display: block;
+  margin-bottom: 30px;
+}
+
 .oman .right-content .right-first-image {
   margin-bottom: 28.5px;
 }
@@ -970,11 +993,9 @@ About Us
   padding-bottom: 90px;
   height: 100vh;
 }
-
 #about .section-heading {
   margin-bottom: 60px;
 }
-
 #about .item .down-content {
   padding-top: 30px;
   position: relative;
@@ -982,36 +1003,30 @@ About Us
   background-color: #fff;
   text-align: center;
 }
-
 #about .item .down-content h4 {
   font-size: 22px;
   color: #2a2a2a;
   font-weight: 700;
   margin-bottom: 8px;
 }
-
 #about .item .down-content span {
   font-size: 18px;
   color: #a1a1a1;
   font-weight: 500;
   display: block;
 }
-
 #about .item .down-content ul.stars {
   position: absolute;
   right: 0;
   top: 30px;
 }
-
 #about .item .down-content ul.stars li {
   display: inline;
   font-size: 13px;
 }
-
 #about .item .thumb img {
   border-radius: 50%;
 }
-
 #about .item .thumb .hover-content {
   position: absolute;
   z-index: 2;
@@ -1022,22 +1037,18 @@ About Us
   visibility: hidden;
   transition: all 0.5s;
 }
-
 #about .item .thumb:hover .hover-content {
   bottom: 30px;
   opacity: 1;
   visibility: visible;
 }
-
 #about .item .thumb {
   position: relative;
 }
-
 #about .item .thumb .hover-content ul li {
   display: inline;
   margin: 0px 10px;
 }
-
 #about .item .thumb .hover-content ul li a {
   width: 50px;
   height: 50px;
@@ -1047,7 +1058,6 @@ About Us
   color: #2a2a2a;
   background-color: #fff;
 }
-
 #about .owl-nav {
   text-align: center;
   position: absolute;
@@ -1055,22 +1065,18 @@ About Us
   top: 40%;
   transform: translateY(-25px);
 }
-
 #about .owl-dots {
   display: none;
 }
-
 #about .owl-nav .owl-prev {
   position: absolute;
   left: -80px;
   outline: none;
 }
-
 #about .owl-nav .owl-prev span,
 #about .owl-nav .owl-next span {
   opacity: 0;
 }
-
 #about .owl-nav .owl-prev:before {
   display: inline-block;
   font-family: 'FontAwesome';
@@ -1084,31 +1090,25 @@ About Us
   line-height: 48px;
   border: 1px solid #2a2a2a;
 }
-
 #about .owl-nav .owl-prev {
   opacity: 0.75;
   transition: all 0.5s;
 }
-
 #about .owl-nav .owl-prev:hover {
   opacity: 1;
 }
-
 #about .owl-nav .owl-next {
   opacity: 0.75;
   transition: all 0.5s;
 }
-
 #about .owl-nav .owl-next:hover {
   opacity: 1;
 }
-
 #about .owl-nav .owl-next {
   outline: none;
   position: absolute;
   right: -85px;
 }
-
 #about .owl-nav .owl-next:before {
   display: inline-block;
   font-family: 'FontAwesome';
@@ -1319,25 +1319,8 @@ responsive
 ---------------------------------------------
 */
 
-@media (min-width: 1200px) {
-  .oman .left-content .inner-content {
-    position: absolute;
-    left: 100px;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-  .oman .left-content .inner-content h4 {
-    color: #fff;
-    margin-top: -10px;
-    font-size: 52px;
-    font-weight: 700;
-    margin-bottom: 20px;
-  }
-}
-
 @media (max-width: 1200px) {
-  .main-banner .right-content .right-first-image .thumb .hover-content p {
+  .oman .right-content .right-first-image .thumb .hover-content p {
     display: none;
   }
   .service .icon {
@@ -1350,7 +1333,6 @@ responsive
     color: transparent;
   }
   .oman .left-content .inner-content h4 {
-    color: #fff;
     font-size: 52px;
     font-weight: 700;
   }
@@ -1423,12 +1405,6 @@ responsive
 }
 
 @media (max-width: 767px) {
-  .main-banner .left-content .thumb .inner-content {
-    left: 50%;
-    top: 47.5%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
   #offer .container {
     padding: 20px;
   }
@@ -1453,16 +1429,16 @@ responsive
   .oman .left-content .thumb {
     margin-bottom: 30px;
   }
-  .oman .left-content .inner-content {
+  .oman .left-content .thumb .inner-content {
     position: absolute;
-    left: 115px;
-    top: 50%;
-    transform: translateY(-50%);
+    left: 50%;
+    top: 47.5%;
+    transform: translate(-50%, -50%);
+    text-align: center;
   }
   #oman .left-content .thumb h4,
   #oman .right-first-image h4 {
     font-size: 24px;
-    margin: 0px;
   }
   .section.consult {
     padding: 30px;
