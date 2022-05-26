@@ -273,6 +273,29 @@ body {
 header
 ---------------------------------------------
 */
+.background-header {
+  border-bottom: none !important;
+  background-color: #fff;
+  height: 80px !important;
+  position: fixed !important;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15) !important;
+}
+
+.background-header .logo,
+.background-header .main-nav .nav li a {
+  color: #1e1e1e !important;
+}
+
+.background-header .main-nav .nav li:hover a {
+  color: #2a2a2a !important;
+}
+
+.background-header .nav li a.active {
+  color: #2a2a2a !important;
+}
 
 .header-area {
   box-shadow: none;
@@ -908,6 +931,7 @@ section.oman {
   font-size: 52px;
   font-weight: 700;
   margin-bottom: 20px;
+  text-align: right;
 }
 
 .oman .left-content .inner-content span {
