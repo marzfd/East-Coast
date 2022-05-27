@@ -1,3 +1,3 @@
 East Coast
 
-[Visit here ...](https://marzfd.github.io/East-Coast)
+[Visit here ...](https://marzfd.github.io/East-Coast/fa)
