@@ -310,6 +310,23 @@ header
   transition: all 0.5s ease 0s;
 }
 
+.header-area .lan-btn button {
+  position: absolute;
+  top: 35%;
+  left: 25px;
+  z-index: 100;
+  border: 2px solid #1e1e1e;
+  border-radius: 50px;
+  background-color: transparent;
+  outline: none;
+}
+
+.header-area .lan-btn a {
+  color: #1e1e1e;
+  font-size: 14px;
+  font-weight: 600;
+}
+
 .header-area .main-nav {
   min-height: 80px;
   background: transparent;
@@ -466,7 +483,7 @@ header
   height: 40px;
   text-indent: -9999em;
   z-index: 99;
-  left: 20px;
+  left: 0;
   display: none;
 }
 
@@ -619,6 +636,9 @@ header
   .header-area .logo {
     margin-left: 30px;
   }
+  .header-area .main-nav .menu-trigger {
+    left: 80px;
+  }
   .header-area .menu-trigger {
     display: block !important;
   }
@@ -745,7 +765,7 @@ section.offer {
 }
 
 .offer .section-heading h2 {
-  margin-bottom: 50px;
+  margin: 50px 0;
   color: #eee;
 }
 
