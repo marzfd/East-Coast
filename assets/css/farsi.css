@@ -860,9 +860,8 @@ section .service {
 }
 
 .service .naccs .menu div {
-  color: #fa;
   font-size: 15px;
-  background-color: #abffdb;
+  background-color: #b1daca;
   margin-bottom: 1px;
   height: 126px;
   text-align: right;
@@ -1421,7 +1420,7 @@ footer .under-footer p {
 }
 
 footer .under-footer a {
-  color: #cff;
+  color: #abffdb;
 }
 
 footer .under-footer a:hover {
