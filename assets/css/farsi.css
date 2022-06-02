@@ -30,6 +30,7 @@ font & reset css
     url('../fonts/Vazir.woff2') format('woff2');
   font-weight: normal;
 }
+
 /*
 ---------------------------------------------
 reset
@@ -201,13 +202,16 @@ body {
   body {
     overflow-x: hidden;
   }
+
   .mobile-top-fix {
     margin-top: 30px;
     margin-bottom: 0px;
   }
+
   .mobile-bottom-fix {
     margin-bottom: 30px;
   }
+
   .mobile-bottom-fix-big {
     margin-bottom: 60px;
   }
@@ -394,7 +398,7 @@ header
 }
 
 .header-area .main-nav .nav li a {
-  color: #2a2a2a;
+  color: #34394f;
 }
 
 .header-area .main-nav .nav li:hover a,
@@ -614,6 +618,7 @@ header
     padding-left: 12px;
     padding-right: 12px;
   }
+
   .header-area .main-nav:before {
     display: none;
   }
@@ -623,14 +628,17 @@ header
   .header-area .main-nav .logo {
     color: #1e1e1e;
   }
+
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
     color: #aaa !important;
     opacity: 1;
   }
+
   .header-area.header-sticky .nav li.search-icon a {
     width: 100%;
   }
+
   .header-area {
     background-color: #f7f7f7;
     padding: 0px 15px;
@@ -638,21 +646,27 @@ header
     box-shadow: none;
     text-align: center;
   }
+
   .header-area .container {
     padding: 0px;
   }
+
   .header-area .logo {
     margin-left: 30px;
   }
+
   .header-area .main-nav .menu-trigger {
     left: 80px;
   }
+
   .header-area .menu-trigger {
     display: block !important;
   }
+
   .header-area .main-nav {
     overflow: hidden;
   }
+
   .header-area .main-nav .nav {
     float: none;
     width: 100%;
@@ -663,12 +677,15 @@ header
     transition: all 0s ease 0s;
     margin-left: 0px;
   }
+
   .header-area .main-nav .nav li:first-child {
     border-top: 1px solid #eee;
   }
+
   .header-area.header-sticky .nav {
     margin-top: 100px !important;
   }
+
   .header-area .main-nav .nav li {
     width: 100%;
     background: #fff;
@@ -676,6 +693,7 @@ header
     padding-left: 0px !important;
     padding-right: 0px !important;
   }
+
   .header-area .main-nav .nav li a {
     height: 50px !important;
     line-height: 50px !important;
@@ -684,10 +702,12 @@ header
     background: #f7f7f7 !important;
     color: #191a20 !important;
   }
+
   .header-area .main-nav .nav li a:hover {
     background: #eee !important;
     color: #aaa !important;
   }
+
   .header-area .main-nav .nav li.submenu ul {
     position: relative;
     visibility: inherit;
@@ -700,22 +720,27 @@ header
     box-shadow: none;
     height: 0px;
   }
+
   .header-area .main-nav .nav li.submenu ul li a {
     font-size: 12px;
     font-weight: 400;
   }
+
   .header-area .main-nav .nav li.submenu ul li a:hover:before {
     width: 0px;
   }
+
   .header-area .main-nav .nav li.submenu ul.active {
     height: auto !important;
   }
+
   .header-area .main-nav .nav li.submenu:after {
     color: #3b566e;
     right: 25px;
     font-size: 14px;
     top: 15px;
   }
+
   .header-area .main-nav .nav li.submenu:hover ul,
   .header-area .main-nav .nav li.submenu:focus ul {
     height: 0px;
@@ -735,7 +760,7 @@ banner
 */
 section.main-banner {
   padding: 100px 0 40px 0;
-  background-color: #fffdd080;
+  background-color: #face8c;
 }
 
 .main-banner img {
@@ -757,7 +782,6 @@ section.offer {
   background-attachment: fixed;
   width: 100%;
   height: 100vh;
-  /* padding: 0px; */
 }
 
 #offer .container {
@@ -784,7 +808,7 @@ Services
 */
 
 section .service {
-  background-color: #120f61;
+  background-color: #34394f;
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -819,6 +843,7 @@ section .service {
 .service .icon img {
   max-width: 27px;
 }
+
 .service .icon.business img {
   opacity: 0.4;
   height: 19px;
@@ -835,9 +860,9 @@ section .service {
 }
 
 .service .naccs .menu div {
-  color: #fff;
+  color: #fa;
   font-size: 15px;
-  background-color: #8d99af;
+  background-color: #abffdb;
   margin-bottom: 1px;
   height: 126px;
   text-align: right;
@@ -926,7 +951,7 @@ About Oman
 */
 
 section.oman {
-  background-color: #fffdd080;
+  background-color: #face8c;
   padding: 80px 0;
 }
 
@@ -1278,7 +1303,6 @@ section.consult .section-heading h2 {
   border-radius: 5px;
   font-weight: 500;
   text-transform: capitalize;
-  letter-spacing: 2px;
   border: none;
   transition: all 0.3s;
   outline: none;
@@ -1297,7 +1321,7 @@ Contact
 */
 
 section.contact {
-  background-color: #fffdd080;
+  background-color: #face8c;
   padding-top: 85px;
   padding-bottom: 85px;
   height: auto;
@@ -1336,7 +1360,9 @@ footer
 
 footer {
   padding: 60px 0px 30px 0px;
-  background: #120f61;
+  background: #34394f;
+  color: #face8c;
+  text-align: right;
 }
 
 footer .logo {
@@ -1350,18 +1376,19 @@ footer ul li {
 
 footer ul li a {
   font-size: 14px;
-  color: #fff;
+  color: #fcddae;
+
   transition: all 0.3s;
 }
 
 footer ul li a:hover {
-  color: #aaa;
+  color: #fff;
 }
 
 footer h4 {
   letter-spacing: 0.5px;
   font-size: 16px;
-  color: #fff;
+  color: #face8c;
   font-weight: 700;
   margin-bottom: 20px;
 }
@@ -1387,7 +1414,8 @@ footer .under-footer ul li a {
 }
 
 footer .under-footer p {
-  color: #fff;
+  color: #face8c;
+
   font-size: 14px;
   font-weight: 300;
 }
@@ -1397,7 +1425,7 @@ footer .under-footer a {
 }
 
 footer .under-footer a:hover {
-  color: #c66;
+  color: #face8c;
 }
 
 /*
@@ -1426,15 +1454,18 @@ responsive
   .main-banner .right-content .right-first-image .thumb .hover-content p {
     display: none;
   }
+
   .service .icon {
     margin-right: 50%;
     transform: translateX(33px);
     text-align: center;
     display: inline-block;
   }
+
   .service .naccs .menu .thumb {
     color: transparent;
   }
+
   .oman .left-content .inner-content h4 {
     color: #fff;
     font-size: 52px;
@@ -1447,62 +1478,80 @@ responsive
   section {
     height: auto;
   }
+
   .main-banner .right-content .right-first-image .thumb .hover-content p {
     display: block;
   }
+
   .header-area .main-nav .nav li.submenu:after {
     right: 3px;
   }
+
   .header-area .main-nav .nav li.submenu {
     padding-right: 15px;
   }
+
   .header-area .main-nav .nav li {
     padding-right: 5px;
     padding-left: 5px;
   }
+
   .header-area .main-nav .nav li a {
     font-size: 14px;
     letter-spacing: 0px;
   }
+
   .main-banner .left-content {
     margin-bottom: 30px;
   }
+
   #offer .left-content {
     margin-bottom: 30px;
   }
+
   #offer .right-content .types {
     margin-top: 30px;
   }
+
   .service .nacc .thumb .left-text {
     margin: 30px;
   }
+
   .service .nacc .thumb .right-image {
     padding: 0px;
     margin: 0px 30px 30px 30px;
     display: block;
   }
+
   .service .naccs .menu div.first-thumb {
     border-top-right-radius: 7px;
   }
+
   .service .naccs .menu div.last-thumb {
     border-bottom-left-radius: 0px;
   }
+
   section.oman {
     padding: 30px;
   }
+
   .oman .left-content .thumb {
     margin-bottom: 30px;
   }
+
   #oman .left-content .thumb h4,
   #oman .right-first-image h4 {
     font-size: 40px;
   }
+
   section.consult .left-image {
     display: none;
   }
+
   .contact input {
     margin-bottom: 15px;
   }
+
   .contact form {
     text-align: center;
     margin-bottom: 30px;
@@ -1516,66 +1565,84 @@ responsive
     transform: translate(-50%, -50%);
     text-align: center;
   }
+
   #offer .container {
     padding: 20px;
   }
+
   section .service {
     padding: 20px;
   }
+
   .service .naccs .menu div {
     height: 90px;
     line-height: 90px;
   }
+
   .service .icon {
     width: 55px;
     height: 55px;
     line-height: 52px;
   }
+
   section.oman {
     padding: 20px 10px 0 10px;
   }
+
   #oman {
     padding: 0;
   }
+
   .oman .left-content .thumb {
     margin-bottom: 30px;
   }
+
   #oman .left-content .thumb h4 {
     font-size: 24px;
     margin: 0px;
   }
+
   #oman .right-first-image h4 {
     font-size: 24px;
     margin: 0px;
   }
+
   .section.consult {
     padding: 30px;
     height: auto;
   }
+
   #consult .container {
     padding: 0;
   }
+
   section.contact {
     height: auto;
     padding: 20px 0;
   }
+
   .contact-thumb {
     height: 220px;
     border-radius: 10px;
   }
+
   .contact-thumb .contact-info-body {
     padding: 25px 20px;
   }
+
   .contact-thumb .contact-info-title {
     padding: 12px 20px;
   }
+
   .google-map {
     height: 220px;
     border-radius: 10px;
   }
+
   footer {
     text-align: center;
   }
+
   footer h4 {
     margin-top: 30px;
   }
@@ -1636,9 +1703,11 @@ responsive
     -webkit-transform: scale(0);
     transform: scale(0);
   }
+
   5% {
     opacity: 1;
   }
+
   100% {
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -1652,9 +1721,11 @@ responsive
     -webkit-transform: scale(0);
     transform: scale(0);
   }
+
   5% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
